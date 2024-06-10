@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frozen Meat Shop</title>
+    <title>Shopping Cart - Frozen Meat Shop</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Frozen Meat Shop</h1>
+        <h1>Your Shopping Cart</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,10 +19,13 @@
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <h2>Quality Frozen Meat Delivered to Your Door</h2>
-            <p>Explore our range of premium frozen meat products.</p>
-            <a href="products.html" class="btn">Shop Now</a>
+        <section id="cart">
+            <h2>Items in Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: <span id="cart-total">PHP 0</span></p>
+            <button onclick="checkout()">Checkout</button>
         </section>
     </main>
     <footer>
